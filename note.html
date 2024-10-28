@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteSystem</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
+</head>
+<body>
+    
+    <div class="popup-box">
+        <div class="popup show">
+            <div class="content">
+                <header>
+                    <p>הוסף פתק חדש</p>
+                    <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                    <div class="row tile">
+                        <label>כותרת</label>
+                        <input type="text" id="input">
+                    </div>
+                    <div class="row description">
+                        <label for="">תיאור</label>
+                       <textarea name="" id=""></textarea>
+                    </div>
+                    <button class="add-note">הוסף פתק</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<div class="wrapper">
+   <li class="add-box">
+    <div class="icon"><i class="uil uil-plus"></i></div>
+    <p>הוסף פתק חדש</p>
+   </li>
+
+   <li class="note">
+
+</div>
+
+<div class="date-picker-container">
+    <h2>סינון פתקים ע"פ תאריך </h2>
+    <input type="date" id="dateInput" class="date-input">
+    <button class="confirm-button" onclick="confirmDate()">אישור</button>
+    <div id="selectedDate" class="selected-date"></div>
+  </div>
+
+  <div class="search-container">
+    <h2>חיפוש פתקים</h2>
+    <input type="text" id="searchInput"  placeholder="חפש פתקים..." oninput="filterNotes()">
+</div>
+
+<script src="index.js" ></script>
+
+</body>
+</html>
